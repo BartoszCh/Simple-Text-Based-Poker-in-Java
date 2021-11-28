@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PlayerHand.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">poker-model</a> &gt; <a href="index.source.html" class="el_package">pl.edu.agh.kis.pz1</a> &gt; <span class="el_source">PlayerHand.java</span></div><h1>PlayerHand.java</h1><pre class="source lang-java linenums">package pl.edu.agh.kis.pz1;
+
+import java.util.List;
+
+<span class="nc" id="L5">public class PlayerHand {</span>
+
+    public static boolean CheckStraight(List&lt;Card&gt; cards){
+<span class="fc bfc" id="L8" title="All 2 branches covered.">        for(int i=0; i&lt;cards.size()-1; i++){</span>
+<span class="fc bfc" id="L9" title="All 2 branches covered.">            if(cards.get(i).rank.value != cards.get(i+1).rank.value-1) return false;</span>
+        }
+<span class="fc" id="L11">        return true;</span>
+    }
+
+    public static boolean CheckFlush(List&lt;Card&gt; cards){
+<span class="fc bfc" id="L15" title="All 8 branches covered.">        if((cards.get(0).suit.equals(cards.get(1).suit) &amp;&amp; cards.get(0).suit.equals(cards.get(2).suit) &amp;&amp; cards.get(0).suit.equals(cards.get(3).suit)&amp;&amp; cards.get(0).suit.equals(cards.get(4).suit))) return true;</span>
+<span class="fc" id="L16">        return false;</span>
+    }
+
+    public static int HighestCard(List&lt;Card&gt; cards){
+<span class="fc" id="L20">        int highestRank = 0;</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        for(Card c: cards){</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">            if(c.rank.value*10+c.suit.value &gt; highestRank) highestRank = c.rank.value*10+c.suit.value;</span>
+<span class="fc" id="L23">        }</span>
+<span class="fc" id="L24">        return highestRank;</span>
+    }
+
+    public static boolean CheckFour(List&lt;Card&gt; cards){
+<span class="fc bfc" id="L28" title="All 6 branches covered.">        if((cards.get(0).rank.equals(cards.get(1).rank) &amp;&amp; cards.get(0).rank.equals(cards.get(2).rank) &amp;&amp; cards.get(0).rank.equals(cards.get(3).rank)) ||</span>
+<span class="fc bfc" id="L29" title="All 6 branches covered.">                cards.get(1).rank.equals(cards.get(2).rank) &amp;&amp; cards.get(1).rank.equals(cards.get(3).rank) &amp;&amp; cards.get(1).rank.equals(cards.get(4).rank)) return true;</span>
+<span class="fc" id="L30">        return false;</span>
+    }
+
+    public static boolean CheckThree(List&lt;Card&gt; cards){
+<span class="fc bfc" id="L34" title="All 4 branches covered.">        if((cards.get(0).rank.equals(cards.get(1).rank) &amp;&amp; cards.get(0).rank.equals(cards.get(2).rank)) ||</span>
+<span class="pc bpc" id="L35" title="1 of 4 branches missed.">                cards.get(1).rank.equals(cards.get(2).rank) &amp;&amp; cards.get(1).rank.equals(cards.get(3).rank) ||</span>
+<span class="pc bpc" id="L36" title="1 of 4 branches missed.">                cards.get(2).rank.equals(cards.get(3).rank) &amp;&amp; cards.get(2).rank.equals(cards.get(4).rank)) return true;</span>
+<span class="fc" id="L37">        return false;</span>
+    }
+
+    public static boolean CheckTwoPair(List&lt;Card&gt; cards){
+<span class="fc bfc" id="L41" title="All 4 branches covered.">        if(cards.get(0).rank.equals(cards.get(1).rank) &amp;&amp; cards.get(2).rank.equals(cards.get(3).rank) ||</span>
+<span class="fc bfc" id="L42" title="All 4 branches covered.">                cards.get(0).rank.equals(cards.get(1).rank) &amp;&amp; cards.get(3).rank.equals(cards.get(4).rank) ||</span>
+<span class="pc bpc" id="L43" title="1 of 4 branches missed.">                cards.get(1).rank.equals(cards.get(2).rank) &amp;&amp; cards.get(3).rank.equals(cards.get(4).rank)) return true;</span>
+<span class="fc" id="L44">        return false;</span>
+    }
+
+    public static boolean CheckPair(List&lt;Card&gt; cards){
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        if((cards.get(0).rank.equals(cards.get(1).rank) ||</span>
+<span class="fc bfc" id="L49" title="All 4 branches covered.">                cards.get(1).rank.equals(cards.get(2).rank) || cards.get(2).rank.equals(cards.get(3).rank) ||</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">                cards.get(3).rank.equals(cards.get(4).rank))) return true;</span>
+<span class="fc" id="L51">        return false;</span>
+    }
+
+    public static int  CheckHouse(List&lt;Card&gt; cards){
+<span class="fc bfc" id="L55" title="All 6 branches covered.">        if(cards.get(0).rank.equals(cards.get(1).rank) &amp;&amp; cards.get(0).rank.equals(cards.get(2).rank) &amp;&amp; cards.get(3).rank.equals(cards.get(4).rank)) return cards.get(4).rank.value;</span>
+<span class="pc bpc" id="L56" title="1 of 6 branches missed.">        else if (cards.get(0).rank.equals(cards.get(1).rank) &amp;&amp; cards.get(2).rank.equals(cards.get(3).rank) &amp;&amp; cards.get(2).rank.equals(cards.get(4).rank)) return cards.get(0).rank.value;</span>
+<span class="fc" id="L57">        return 0;</span>
+    }
+
+    public static Hand CheckHand(List&lt;Card&gt; cards){
+<span class="fc bfc" id="L61" title="All 4 branches covered.">        if (CheckStraight(cards) &amp;&amp; CheckFlush(cards)){</span>
+<span class="fc bfc" id="L62" title="All 2 branches covered.">            if (HighestCard(cards) &gt;= 140) return Hand.ROYAL_FLUSH;</span>
+<span class="fc" id="L63">            else return Hand.STRAIGHT_FLUSH;</span>
+        }
+<span class="fc bfc" id="L65" title="All 2 branches covered.">        else if (CheckFour(cards)){</span>
+<span class="fc" id="L66">            return Hand.FOUR_OF_A_KIND;</span>
+        }
+<span class="fc bfc" id="L68" title="All 2 branches covered.">        else if (CheckHouse(cards) &gt; 0){</span>
+<span class="fc" id="L69">            return Hand.FULL_HOUSE;</span>
+        }
+<span class="fc bfc" id="L71" title="All 2 branches covered.">        else if (CheckFlush(cards)){</span>
+<span class="fc" id="L72">            return Hand.FLUSH;</span>
+        }
+<span class="fc bfc" id="L74" title="All 2 branches covered.">        else if(CheckStraight(cards)){</span>
+<span class="fc" id="L75">            return Hand.STRAIGHT;</span>
+        }
+<span class="fc bfc" id="L77" title="All 2 branches covered.">        else if(CheckThree(cards)){</span>
+<span class="fc" id="L78">            return Hand.THREE_OF_A_KIND;</span>
+        }
+<span class="fc bfc" id="L80" title="All 2 branches covered.">        else if (CheckTwoPair(cards)){</span>
+<span class="fc" id="L81">            return Hand.TWO_PAIR;</span>
+        }
+<span class="fc bfc" id="L83" title="All 2 branches covered.">        else if(CheckPair(cards)){</span>
+<span class="fc" id="L84">            return Hand.PAIR;</span>
+        }
+<span class="fc" id="L86">        return Hand.HIGHEST_CARD;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

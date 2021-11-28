@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MainModel.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">poker-model</a> &gt; <a href="index.source.html" class="el_package">pl.edu.agh.kis.pz1</a> &gt; <span class="el_source">MainModel.java</span></div><h1>MainModel.java</h1><pre class="source lang-java linenums">package pl.edu.agh.kis.pz1;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.*;
+
+<span class="nc" id="L8">public class MainModel {</span>
+    public static void main(String[] args){
+
+<span class="nc" id="L11">    }</span>
+
+    public static void cardShower(List&lt;Player&gt; players){
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        for (Player p:players){</span>
+<span class="fc" id="L15">            p.showCards();</span>
+<span class="fc" id="L16">            System.out.println(&quot;Current hand is: &quot; + p.currentHand);</span>
+<span class="fc" id="L17">        }</span>
+<span class="fc" id="L18">    }</span>
+
+
+    public static void cardSwapper(List&lt;Player&gt; players, List&lt;Card&gt; shuffledDeck, int currSize){
+<span class="nc" id="L22">        Scanner scan = new Scanner(System.in);</span>
+        String answer;
+
+<span class="nc bnc" id="L25" title="All 2 branches missed.">        for(Player p: players){</span>
+<span class="nc" id="L26">            System.out.println( p.playerName + &quot;, you can swap up to 4 cards.\n&quot; );</span>
+<span class="nc" id="L27">            int swappedCards = 0;</span>
+<span class="nc bnc" id="L28" title="All 2 branches missed.">            for(int j=0; j&lt;5; j++){</span>
+<span class="nc bnc" id="L29" title="All 2 branches missed.">                if (swappedCards == 4) break;</span>
+<span class="nc" id="L30">                System.out.println(&quot;Do you want to swap &quot; + p.cards.get(j).toString() + &quot;?&quot;);</span>
+<span class="nc" id="L31">                answer = scan.nextLine();</span>
+<span class="nc bnc" id="L32" title="All 4 branches missed.">                if (answer.equals(&quot;Y&quot;) ||answer.equals(&quot;y&quot;) ){</span>
+<span class="nc" id="L33">                    p.cards.set(j, shuffledDeck.get(currSize-1));</span>
+<span class="nc" id="L34">                    currSize -= 1;</span>
+<span class="nc" id="L35">                    swappedCards += 1;</span>
+                }
+            }
+<span class="nc" id="L38">            sortCards(p.cards);</span>
+<span class="nc" id="L39">            p.currentHand = PlayerHand.CheckHand(p.cards);</span>
+<span class="nc" id="L40">        }</span>
+<span class="nc" id="L41">    }</span>
+
+    public static void sortPlayers(List&lt;Player&gt; players) {
+<span class="fc bfc" id="L44" title="All 2 branches covered.">        for (int i = 0; i &lt; players.size(); i++) {</span>
+<span class="fc bfc" id="L45" title="All 2 branches covered.">            for (int j = 0; j &lt; players.size() - i - 1; j++) {</span>
+<span class="pc bpc" id="L46" title="1 of 2 branches missed.">                if (players.get(j).currentHand.value &lt; players.get(j + 1).currentHand.value ||</span>
+<span class="pc bpc" id="L47" title="2 of 4 branches missed.">                        (players.get(j).currentHand.value == players.get(j + 1).currentHand.value) &amp;&amp; PlayerHand.HighestCard(players.get(j).cards) &lt; PlayerHand.HighestCard(players.get(j+1).cards))</span>
+<span class="fc" id="L48">                    Collections.swap(players, j, j + 1);</span>
+            }
+        }
+<span class="fc" id="L51">    }</span>
+
+    public static void sortCards(List&lt;Card&gt; cards) {
+<span class="fc bfc" id="L54" title="All 2 branches covered.">        for(int i=0; i&lt;cards.size()-1; i++) {</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">            for (int j = 0; j &lt; cards.size() - i - 1; j++) {</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">                if (cards.get(j).rank.value &gt; cards.get(j + 1).rank.value) Collections.swap(cards, j, j + 1);</span>
+            }
+        }
+<span class="fc" id="L59">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

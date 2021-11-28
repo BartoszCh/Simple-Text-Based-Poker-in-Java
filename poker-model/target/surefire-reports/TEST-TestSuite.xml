@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1.542" tests="39" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1250"/>
+    <property name="java.class.path" value="C:\Users\Bartek\IdeaProjects\poker-project2\poker-model\target\test-classes;C:\Users\Bartek\IdeaProjects\poker-project2\poker-model\target\classes;C:\Users\Bartek\.m2\repository\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;C:\Users\Bartek\.m2\repository\org\apache\logging\log4j\log4j-core\2.12.1\log4j-core-2.12.1.jar;C:\Users\Bartek\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Bartek\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Bartek\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Bartek\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Bartek\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Bartek\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Bartek\.m2\repository\org\junit\platform\junit-platform-surefire-provider\1.3.2\junit-platform-surefire-provider-1.3.2.jar;C:\Users\Bartek\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Bartek\.m2\repository\org\junit\platform\junit-platform-launcher\1.3.2\junit-platform-launcher-1.3.2.jar;C:\Users\Bartek\.m2\repository\org\junit\platform\junit-platform-engine\1.3.2\junit-platform-engine-1.3.2.jar;C:\Users\Bartek\.m2\repository\org\junit\platform\junit-platform-commons\1.3.2\junit-platform-commons-1.3.2.jar;C:\Users\Bartek\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Bartek\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\Bartek\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;C:\Users\Bartek\.m2\repository\org\apache\maven\surefire\common-java5\2.22.0\common-java5-2.22.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PL"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\Bartek\AppData\Local\Temp\surefire5229858002992294904\surefirebooter17645282825675572119.jar C:\Users\Bartek\AppData\Local\Temp\surefire5229858002992294904 2021-11-28T13-09-45_795-jvmRun1 surefire9956879287291328577tmp surefire_011852171658332406941tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Bartek\IdeaProjects\poker-project2\poker-model\target\test-classes;C:\Users\Bartek\IdeaProjects\poker-project2\poker-model\target\classes;C:\Users\Bartek\.m2\repository\org\apache\logging\log4j\log4j-api\2.12.1\log4j-api-2.12.1.jar;C:\Users\Bartek\.m2\repository\org\apache\logging\log4j\log4j-core\2.12.1\log4j-core-2.12.1.jar;C:\Users\Bartek\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Bartek\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Bartek\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Bartek\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Bartek\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Bartek\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\Bartek\.m2\repository\org\junit\platform\junit-platform-surefire-provider\1.3.2\junit-platform-surefire-provider-1.3.2.jar;C:\Users\Bartek\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Bartek\.m2\repository\org\junit\platform\junit-platform-launcher\1.3.2\junit-platform-launcher-1.3.2.jar;C:\Users\Bartek\.m2\repository\org\junit\platform\junit-platform-engine\1.3.2\junit-platform-engine-1.3.2.jar;C:\Users\Bartek\.m2\repository\org\junit\platform\junit-platform-commons\1.3.2\junit-platform-commons-1.3.2.jar;C:\Users\Bartek\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Bartek\.m2\repository\org\apache\maven\surefire\surefire-api\2.22.0\surefire-api-2.22.0.jar;C:\Users\Bartek\.m2\repository\org\apache\maven\surefire\surefire-logger-api\2.22.0\surefire-logger-api-2.22.0.jar;C:\Users\Bartek\.m2\repository\org\apache\maven\surefire\common-java5\2.22.0\common-java5-2.22.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Bartek"/>
+    <property name="user.language" value="pl"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-15.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Bartek\IdeaProjects\poker-project2\poker-model"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Bartek\AppData\Local\Temp\surefire5229858002992294904\surefirebooter17645282825675572119.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="15.0.1+9-18"/>
+    <property name="user.name" value="Bartek"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1250"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Bartek\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Bartek\AppData\Local\Temp\"/>
+    <property name="java.version" value="15.0.1"/>
+    <property name="user.dir" value="C:\Users\Bartek\IdeaProjects\poker-project2\poker-model"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\mingw-w64\x86_64-8.1.0-win32-sjlj-rt_v6-rev0\mingw64\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2021b\bin;C:\Program Files\Java\apache-maven-3.8.3\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\mingw-w64\x86_64-8.1.0-win32-sjlj-rt_v6-rev0\mingw64\bin;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\Bartek\AppData\Local\Programs\Python\Python39;C:\MinGW\bin;C:\Users\Bartek\AppData\Local\Microsoft\WindowsApps;C:\Users\Bartek\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Bartek\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15.0.1+9-18"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="testFactory on testFactory(pl.edu.agh.kis.pz1.DeckTest)" classname="pl.edu.agh.kis.pz1.DeckTest" time="0.093"/>
+  <testcase name="testShuffle on testShuffle(pl.edu.agh.kis.pz1.DeckTest)" classname="pl.edu.agh.kis.pz1.DeckTest" time="0.001"/>
+  <testcase name="testcardShower on testcardShower(pl.edu.agh.kis.pz1.MainModelTest)" classname="pl.edu.agh.kis.pz1.MainModelTest" time="0.011"/>
+  <testcase name="testSortPlayers on testSortPlayers(pl.edu.agh.kis.pz1.MainModelTest)" classname="pl.edu.agh.kis.pz1.MainModelTest" time="0.004"/>
+  <testcase name="testSortCards on testSortCards(pl.edu.agh.kis.pz1.MainModelTest)" classname="pl.edu.agh.kis.pz1.MainModelTest" time="0.001"/>
+  <testcase name="testCheckFlush on testCheckFlush(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testCheckFour2 on testCheckFour2(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckFour3 on testCheckFour3(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testCheckHand2 on testCheckHand2(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testCheckHand3 on testCheckHand3(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.002"/>
+  <testcase name="testCheckHand4 on testCheckHand4(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckHand5 on testCheckHand5(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckHand6 on testCheckHand6(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckHand7 on testCheckHand7(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckHand8 on testCheckHand8(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckHand9 on testCheckHand9(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.003"/>
+  <testcase name="testCheckHouse on testCheckHouse(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckPair2 on testCheckPair2(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckPair3 on testCheckPair3(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckPair4 on testCheckPair4(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testCheckPair5 on testCheckPair5(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckThree on testCheckThree(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testCheckFlush2 on testCheckFlush2(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckHand10 on testCheckHand10(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testCheckHouse2 on testCheckHouse2(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckHouse3 on testCheckHouse3(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckTwoPair on testCheckTwoPair(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testCheckThree2 on testCheckThree2(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.002"/>
+  <testcase name="testCheckThree3 on testCheckThree3(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testCheckThree4 on testCheckThree4(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.002"/>
+  <testcase name="testHighestCard on testHighestCard(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testCheckFour on testCheckFour(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0"/>
+  <testcase name="testCheckHand on testCheckHand(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testCheckPair on testCheckPair(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.002"/>
+  <testcase name="testCheckStraight on testCheckStraight(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testCheckTwoPair2 on testCheckTwoPair2(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.002"/>
+  <testcase name="testCheckTwoPair3 on testCheckTwoPair3(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testCheckTwoPair4 on testCheckTwoPair4(pl.edu.agh.kis.pz1.PlayerHandTest)" classname="pl.edu.agh.kis.pz1.PlayerHandTest" time="0.001"/>
+  <testcase name="testGetValue on testGetValue(pl.edu.agh.kis.pz1.RankTest)" classname="pl.edu.agh.kis.pz1.RankTest" time="0"/>
+</testsuite>

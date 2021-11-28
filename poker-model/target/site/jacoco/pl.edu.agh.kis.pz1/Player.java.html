@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Player.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">poker-model</a> &gt; <a href="index.source.html" class="el_package">pl.edu.agh.kis.pz1</a> &gt; <span class="el_source">Player.java</span></div><h1>Player.java</h1><pre class="source lang-java linenums">package pl.edu.agh.kis.pz1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Player {
+    private static final int PLAYER_SIZE = 5;
+<span class="fc" id="L8">    public String playerName = &quot;Guest&quot;;</span>
+<span class="fc" id="L9">    public List&lt;Card&gt; cards = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L10">    public Hand currentHand = Hand.HIGHEST_CARD;</span>
+
+<span class="fc" id="L12">    public Player (List&lt;Card&gt; cards){</span>
+<span class="fc" id="L13">        MainModel.sortCards(cards);</span>
+<span class="fc" id="L14">        this.cards = cards;</span>
+<span class="fc" id="L15">    }</span>
+
+    public List&lt;Card&gt; getCards() {
+<span class="nc" id="L18">        return cards;</span>
+    }
+
+    public void setCards(List&lt;Card&gt; cards) {
+<span class="nc" id="L22">        this.cards = cards;</span>
+<span class="nc" id="L23">    }</span>
+
+    public static int getPlayerSize() {
+<span class="nc" id="L26">        return PLAYER_SIZE;</span>
+    }
+
+    public void setGuest(int i){
+<span class="nc" id="L30">        playerName = &quot;Guest &quot; + i;</span>
+<span class="nc" id="L31">    }</span>
+
+    public void showCards(){
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        for(int i=0; i &lt; PLAYER_SIZE; i++){</span>
+<span class="fc" id="L35">            System.out.println( this.cards.get(i).toString());</span>
+        }
+<span class="fc" id="L37">        System.out.println(&quot;\n&quot;);</span>
+<span class="fc" id="L38">    }</span>
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

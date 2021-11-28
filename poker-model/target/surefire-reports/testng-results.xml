@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="39" passed="39" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-28T13:09:50 CET" name="Surefire suite" finished-at="2021-11-28T13:09:50 CET" duration-ms="440">
+    <groups>
+    </groups>
+    <test started-at="2021-11-28T13:09:50 CET" name="Surefire test" finished-at="2021-11-28T13:09:50 CET" duration-ms="440">
+      <class name="pl.edu.agh.kis.pz1.RankTest">
+        <test-method signature="testGetValue()" started-at="2021-11-28T13:09:50 CET" name="testGetValue" finished-at="2021-11-28T13:09:50 CET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetValue -->
+      </class> <!-- pl.edu.agh.kis.pz1.RankTest -->
+      <class name="pl.edu.agh.kis.pz1.DeckTest">
+        <test-method signature="testFactory()" started-at="2021-11-28T13:09:50 CET" name="testFactory" finished-at="2021-11-28T13:09:50 CET" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFactory -->
+        <test-method signature="testShuffle()" started-at="2021-11-28T13:09:50 CET" name="testShuffle" finished-at="2021-11-28T13:09:50 CET" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testShuffle -->
+      </class> <!-- pl.edu.agh.kis.pz1.DeckTest -->
+      <class name="pl.edu.agh.kis.pz1.MainModelTest">
+        <test-method signature="testcardShower()" started-at="2021-11-28T13:09:50 CET" name="testcardShower" finished-at="2021-11-28T13:09:50 CET" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcardShower -->
+        <test-method signature="testSortCards()" started-at="2021-11-28T13:09:50 CET" name="testSortCards" finished-at="2021-11-28T13:09:50 CET" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortCards -->
+        <test-method signature="testSortPlayers()" started-at="2021-11-28T13:09:50 CET" name="testSortPlayers" finished-at="2021-11-28T13:09:50 CET" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSortPlayers -->
+      </class> <!-- pl.edu.agh.kis.pz1.MainModelTest -->
+      <class name="pl.edu.agh.kis.pz1.PlayerHandTest">
+        <test-method signature="testCheckFlush()" started-at="2021-11-28T13:09:50 CET" name="testCheckFlush" finished-at="2021-11-28T13:09:50 CET" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckFlush -->
+        <test-method signature="testCheckFour3()" started-at="2021-11-28T13:09:50 CET" name="testCheckFour3" finished-at="2021-11-28T13:09:50 CET" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckFour3 -->
+        <test-method signature="testCheckHand3()" started-at="2021-11-28T13:09:50 CET" name="testCheckHand3" finished-at="2021-11-28T13:09:50 CET" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHand3 -->
+        <test-method signature="testCheckHand2()" started-at="2021-11-28T13:09:50 CET" name="testCheckHand2" finished-at="2021-11-28T13:09:50 CET" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHand2 -->
+        <test-method signature="testCheckFour2()" started-at="2021-11-28T13:09:50 CET" name="testCheckFour2" finished-at="2021-11-28T13:09:50 CET" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckFour2 -->
+        <test-method signature="testCheckHand6()" started-at="2021-11-28T13:09:50 CET" name="testCheckHand6" finished-at="2021-11-28T13:09:50 CET" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHand6 -->
+        <test-method signature="testCheckHand7()" started-at="2021-11-28T13:09:50 CET" name="testCheckHand7" finished-at="2021-11-28T13:09:50 CET" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHand7 -->
+        <test-method signature="testCheckHand4()" started-at="2021-11-28T13:09:50 CET" name="testCheckHand4" finished-at="2021-11-28T13:09:50 CET" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHand4 -->
+        <test-method signature="testCheckHand5()" started-at="2021-11-28T13:09:50 CET" name="testCheckHand5" finished-at="2021-11-28T13:09:50 CET" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHand5 -->
+        <test-method signature="testCheckHouse()" started-at="2021-11-28T13:09:50 CET" name="testCheckHouse" finished-at="2021-11-28T13:09:50 CET" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHouse -->
+        <test-method signature="testCheckPair3()" started-at="2021-11-28T13:09:50 CET" name="testCheckPair3" finished-at="2021-11-28T13:09:50 CET" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckPair3 -->
+        <test-method signature="testCheckHand8()" started-at="2021-11-28T13:09:50 CET" name="testCheckHand8" finished-at="2021-11-28T13:09:50 CET" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHand8 -->
+        <test-method signature="testCheckPair2()" started-at="2021-11-28T13:09:50 CET" name="testCheckPair2" finished-at="2021-11-28T13:09:50 CET" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckPair2 -->
+        <test-method signature="testCheckHand9()" started-at="2021-11-28T13:09:50 CET" name="testCheckHand9" finished-at="2021-11-28T13:09:50 CET" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHand9 -->
+        <test-method signature="testCheckPair4()" started-at="2021-11-28T13:09:50 CET" name="testCheckPair4" finished-at="2021-11-28T13:09:50 CET" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckPair4 -->
+        <test-method signature="testCheckPair5()" started-at="2021-11-28T13:09:50 CET" name="testCheckPair5" finished-at="2021-11-28T13:09:50 CET" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckPair5 -->
+        <test-method signature="testCheckThree()" started-at="2021-11-28T13:09:50 CET" name="testCheckThree" finished-at="2021-11-28T13:09:50 CET" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckThree -->
+        <test-method signature="testCheckFlush2()" started-at="2021-11-28T13:09:50 CET" name="testCheckFlush2" finished-at="2021-11-28T13:09:50 CET" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckFlush2 -->
+        <test-method signature="testCheckHouse3()" started-at="2021-11-28T13:09:50 CET" name="testCheckHouse3" finished-at="2021-11-28T13:09:50 CET" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHouse3 -->
+        <test-method signature="testCheckThree2()" started-at="2021-11-28T13:09:50 CET" name="testCheckThree2" finished-at="2021-11-28T13:09:50 CET" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckThree2 -->
+        <test-method signature="testCheckHouse2()" started-at="2021-11-28T13:09:50 CET" name="testCheckHouse2" finished-at="2021-11-28T13:09:50 CET" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHouse2 -->
+        <test-method signature="testCheckTwoPair()" started-at="2021-11-28T13:09:50 CET" name="testCheckTwoPair" finished-at="2021-11-28T13:09:50 CET" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckTwoPair -->
+        <test-method signature="testCheckHand10()" started-at="2021-11-28T13:09:50 CET" name="testCheckHand10" finished-at="2021-11-28T13:09:50 CET" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHand10 -->
+        <test-method signature="testHighestCard()" started-at="2021-11-28T13:09:50 CET" name="testHighestCard" finished-at="2021-11-28T13:09:50 CET" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHighestCard -->
+        <test-method signature="testCheckThree3()" started-at="2021-11-28T13:09:50 CET" name="testCheckThree3" finished-at="2021-11-28T13:09:50 CET" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckThree3 -->
+        <test-method signature="testCheckThree4()" started-at="2021-11-28T13:09:50 CET" name="testCheckThree4" finished-at="2021-11-28T13:09:50 CET" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckThree4 -->
+        <test-method signature="testCheckFour()" started-at="2021-11-28T13:09:50 CET" name="testCheckFour" finished-at="2021-11-28T13:09:50 CET" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckFour -->
+        <test-method signature="testCheckPair()" started-at="2021-11-28T13:09:50 CET" name="testCheckPair" finished-at="2021-11-28T13:09:50 CET" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckPair -->
+        <test-method signature="testCheckHand()" started-at="2021-11-28T13:09:50 CET" name="testCheckHand" finished-at="2021-11-28T13:09:50 CET" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckHand -->
+        <test-method signature="testCheckTwoPair2()" started-at="2021-11-28T13:09:50 CET" name="testCheckTwoPair2" finished-at="2021-11-28T13:09:50 CET" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckTwoPair2 -->
+        <test-method signature="testCheckStraight()" started-at="2021-11-28T13:09:50 CET" name="testCheckStraight" finished-at="2021-11-28T13:09:50 CET" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckStraight -->
+        <test-method signature="testCheckTwoPair3()" started-at="2021-11-28T13:09:50 CET" name="testCheckTwoPair3" finished-at="2021-11-28T13:09:50 CET" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckTwoPair3 -->
+        <test-method signature="testCheckTwoPair4()" started-at="2021-11-28T13:09:50 CET" name="testCheckTwoPair4" finished-at="2021-11-28T13:09:50 CET" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckTwoPair4 -->
+      </class> <!-- pl.edu.agh.kis.pz1.PlayerHandTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

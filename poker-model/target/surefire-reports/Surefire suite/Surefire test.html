@@ -1,0 +1,274 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>39/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 28 13:09:50 CET 2021</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (440 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHand6()'><b>testCheckHand6</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHand6(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckPair4()'><b>testCheckPair4</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckPair4(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHouse3()'><b>testCheckHouse3</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHouse3(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHouse()'><b>testCheckHouse</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHouse(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckPair3()'><b>testCheckPair3</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckPair3(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckThree2()'><b>testCheckThree2</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckThree2(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.MainModelTest.testSortCards()'><b>testSortCards</b><br>Test class: pl.edu.agh.kis.pz1.MainModelTest</td>
+<td></td>
+<td>0</td>
+<td>testSortCards(pl.edu.agh.kis.pz1.MainModelTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHand7()'><b>testCheckHand7</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHand7(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckFlush()'><b>testCheckFlush</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckFlush(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testHighestCard()'><b>testHighestCard</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testHighestCard(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHand8()'><b>testCheckHand8</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHand8(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckThree3()'><b>testCheckThree3</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckThree3(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.MainModelTest.testSortPlayers()'><b>testSortPlayers</b><br>Test class: pl.edu.agh.kis.pz1.MainModelTest</td>
+<td></td>
+<td>0</td>
+<td>testSortPlayers(pl.edu.agh.kis.pz1.MainModelTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckPair5()'><b>testCheckPair5</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckPair5(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckPair2()'><b>testCheckPair2</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckPair2(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHand4()'><b>testCheckHand4</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHand4(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckPair()'><b>testCheckPair</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckPair(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHand9()'><b>testCheckHand9</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHand9(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckFour3()'><b>testCheckFour3</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckFour3(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckTwoPair3()'><b>testCheckTwoPair3</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckTwoPair3(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckThree4()'><b>testCheckThree4</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckThree4(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHand5()'><b>testCheckHand5</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHand5(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckThree()'><b>testCheckThree</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckThree(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHand()'><b>testCheckHand</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHand(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.RankTest.testGetValue()'><b>testGetValue</b><br>Test class: pl.edu.agh.kis.pz1.RankTest</td>
+<td></td>
+<td>0</td>
+<td>testGetValue(pl.edu.agh.kis.pz1.RankTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckTwoPair2()'><b>testCheckTwoPair2</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckTwoPair2(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckStraight()'><b>testCheckStraight</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckStraight(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHand3()'><b>testCheckHand3</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHand3(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckFlush2()'><b>testCheckFlush2</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckFlush2(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckTwoPair4()'><b>testCheckTwoPair4</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckTwoPair4(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHand2()'><b>testCheckHand2</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHand2(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.DeckTest.testFactory()'><b>testFactory</b><br>Test class: pl.edu.agh.kis.pz1.DeckTest</td>
+<td></td>
+<td>0</td>
+<td>testFactory(pl.edu.agh.kis.pz1.DeckTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.DeckTest.testShuffle()'><b>testShuffle</b><br>Test class: pl.edu.agh.kis.pz1.DeckTest</td>
+<td></td>
+<td>0</td>
+<td>testShuffle(pl.edu.agh.kis.pz1.DeckTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHouse2()'><b>testCheckHouse2</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHouse2(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckTwoPair()'><b>testCheckTwoPair</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckTwoPair(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckFour()'><b>testCheckFour</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckFour(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckHand10()'><b>testCheckHand10</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckHand10(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.MainModelTest.testcardShower()'><b>testcardShower</b><br>Test class: pl.edu.agh.kis.pz1.MainModelTest</td>
+<td></td>
+<td>0</td>
+<td>testcardShower(pl.edu.agh.kis.pz1.MainModelTest)</td></tr>
+<tr>
+<td title='pl.edu.agh.kis.pz1.PlayerHandTest.testCheckFour2()'><b>testCheckFour2</b><br>Test class: pl.edu.agh.kis.pz1.PlayerHandTest</td>
+<td></td>
+<td>0</td>
+<td>testCheckFour2(pl.edu.agh.kis.pz1.PlayerHandTest)</td></tr>
+</table><p>
+</body>
+</html>

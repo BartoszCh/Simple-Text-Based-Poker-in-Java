@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pl"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Deck.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">poker-model</a> &gt; <a href="index.source.html" class="el_package">pl.edu.agh.kis.pz1</a> &gt; <span class="el_source">Deck.java</span></div><h1>Deck.java</h1><pre class="source lang-java linenums">package pl.edu.agh.kis.pz1;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Collections;
+
+/** klasa pl.edu.agh.kis.pz1.Deck ktora przechowuje talie wygenerowanych kart
+ *
+ */
+public class Deck {
+    public static final int DECK_SIZE = 52;
+<span class="fc" id="L13">    private List&lt;Card&gt; cards = new ArrayList&lt;&gt;();</span>
+
+<span class="nc" id="L15">    public List&lt;Card&gt; getCards() {return cards;}</span>
+
+    public void setCards(List&lt;Card&gt; cards) {
+<span class="nc" id="L18">        this.cards = cards;</span>
+<span class="nc" id="L19">    }</span>
+
+<span class="fc" id="L21">    Deck(List&lt;Card&gt; cards){</span>
+<span class="fc" id="L22">        this.cards = cards;</span>
+<span class="fc" id="L23">    }</span>
+
+    /**
+     * fabryka kart tworząca posortowaną talie
+     * @return
+     */
+    public static List&lt;Card&gt; factory(){
+<span class="fc" id="L30">        List&lt;Card&gt; newDeck = new LinkedList&lt;&gt;();</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        for (Suit suit : Suit.values()){</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">            for (Rank rank :Rank.values()){</span>
+<span class="fc" id="L33">                newDeck.add(new Card(rank, suit));</span>
+            }
+        }
+<span class="fc" id="L36">        return newDeck;</span>
+    }
+
+    /**
+     * potasowanie posortowanej talii
+     * @return
+     */
+    public List&lt;Card&gt; shuffle() {
+<span class="fc" id="L44">        List&lt;Card&gt; shuffledCards = this.cards;</span>
+<span class="fc" id="L45">        Collections.shuffle(shuffledCards);</span>
+<span class="fc" id="L46">        return shuffledCards;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
